@@ -2,32 +2,35 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Walter Navarrete</title>
-  <link rel="stylesheet" href="assets/styles.css">
-
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Walter Navarrete</title>
+   <link rel="stylesheet" href="assets/general.css">
+   <link rel="stylesheet" href="assets/about.css">
 </head>
 
 <body>
 
-  <header class="header">
-    <a href="#Inicio" class="logo">wn</span></a>
-
-    <i class="fa-solid fa-bars" id="iconos-menu"></i>
-
-    <nav class="navbar">
-      <a href="index.html" >Inicio</a>
+   <header class="header">
+      <a href="index.html" class="logo">wn</span></a>
+    
+      <div id="iconos-menu" class="hamburger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="navbar">
+        <a href="index.html">Inicio</a>
         <a href="about.html" class="active">Sobre Mi</a>
         <a href="services.html">Servicios</a>
         <a href="skills.html">Habilidades</a>
         <a href="contact.html">Contacto</a>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
    <main>
       <section class="about" id="about">
- 
+
          <div class="img-about">
             <img src="images/foto-perfil.jpeg" alt="foto-biografía">
          </div>
@@ -62,7 +65,11 @@
          <p class="copyright">@ Walter Navarrete / Todos los Derechos Reservados 2024®</p>
       </div>
    </footer>
-
+   <script>
+      document.getElementById('iconos-menu').addEventListener('click', function() {
+     document.querySelector('.navbar').classList.toggle('active');
+   });
+     </script>
 </body>
 
 </html>

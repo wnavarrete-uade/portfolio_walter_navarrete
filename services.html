@@ -5,59 +5,67 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Walter Navarrete</title>
-  <link rel="stylesheet" href="assets/styles.css">
-
+  <link rel="stylesheet" href="assets/general.css">
+  <link rel="stylesheet" href="assets/services.css">
 </head>
 
 <body>
 
   <header class="header">
-    <a href="#Inicio" class="logo">wn</span></a>
-
-    <i class="fa-solid fa-bars" id="iconos-menu"></i>
+    <a href="index.html" class="logo">wn</span></a>
+  
+    <div id="iconos-menu" class="hamburger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <nav class="navbar">
-        <a href="index.html" >Inicio</a>
-        <a href="index.html" >Inicio</a>
-        <a href="about.html">Sobre Mi</a>
-        <a href="services.html" class="active">Servicios</a>
-        <a href="skills.html">Habilidades</a>
-        <a href="contact.html">Contacto</a>
-      </nav>
+      <a href="index.html">Inicio</a>
+      <a href="about.html">Sobre Mi</a>
+      <a href="services.html" class="active">Servicios</a>
+      <a href="skills.html">Habilidades</a>
+      <a href="contact.html">Contacto</a>
+    </nav>
   </header>
 
-   <main>
-   <section class="container" id="servicios">
+  <main>
+    <section class="" id="servicios">
 
       <h2 class="heading heading-title">Que ofrezco?</h2>
 
       <div class="services-section">
-         <div class="service">
-               <h4 class="service-title">Diseño de <br> soluciones web</h4>
-               <p class="service-description">Creo soluciones web personalizadas que se adaptan a las necesidades 
-                específicas de tu negocio, mejorando la experiencia del usuario y 
-                optimizando la funcionalidad.</p>
-         </div>
+        <div class="service">
+          <h4 class="service-title">Diseño de <br> soluciones web</h4>
+          <p class="service-description">Creo soluciones web personalizadas que se adaptan a las necesidades
+            específicas de tu negocio, mejorando la experiencia del usuario y
+            optimizando la funcionalidad.</p>
+        </div>
 
-         <div class="service">
-               <h4 class="service-title">Diseño Web <br> Responsive HTML5</h4>
-               <p class="service-description">Desarrollo sitios web adaptables a cualquier dispositivo, garantizando una experiencia de usuario óptima, utilizando las últimas tecnologías HTML5.</p>
-         </div>
+        <div class="service">
+          <h4 class="service-title">Diseño Web <br> Responsive HTML5</h4>
+          <p class="service-description">Desarrollo sitios web adaptables a cualquier dispositivo, garantizando una
+            experiencia de usuario óptima, utilizando las últimas tecnologías HTML5.</p>
+        </div>
 
-         <div class="service">
-               <h4 class="service-title">Diseño Web autoadministrables</h4>
-               <p class="service-description">Diseño sitios web que puedes gestionar tú mismo, permitiéndote actualizar contenido, imágenes y más sin necesidad de conocimientos técnicos avanzados.</p>
-         </div>
+        <div class="service">
+          <h4 class="service-title">Diseño Web autoadministrables</h4>
+          <p class="service-description">Diseño sitios web que puedes gestionar tú mismo, permitiéndote actualizar
+            contenido, imágenes y más sin necesidad de conocimientos técnicos avanzados.</p>
+        </div>
       </div>
-   </section>
-</main>
+    </section>
+  </main>
 
-<footer class="footer">
-   <div class="text-container">
-     <p>&copy; 2024 Walter Navarrete. Todos los derechos reservados.</p>
-   </div>
+  <footer class="footer">
+    <div class="text-container">
+       <p class="copyright">@ Walter Navarrete / Todos los Derechos Reservados 2024®</p>
+    </div>
  </footer>
-
-
+ <script>
+  document.getElementById('iconos-menu').addEventListener('click', function() {
+ document.querySelector('.navbar').classList.toggle('active');
+});
+ </script>
 </body>
-</html>
 
+</html>

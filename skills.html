@@ -5,24 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Walter Navarrete</title>
-  <link rel="stylesheet" href="assets/styles.css">
-
+  <link rel="stylesheet" href="assets/general.css">
+  <link rel="stylesheet" href="assets/skills.css">
 </head>
 
 <body>
 
   <header class="header">
-    <a href="#Inicio" class="logo">wn</span></a>
-
-    <i class="fa-solid fa-bars" id="iconos-menu"></i>
-
+    <a href="index.html" class="logo">wn</span></a>
+  
+    <div id="iconos-menu" class="hamburger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <nav class="navbar">
-        <a href="index.html" >Inicio</a>
-        <a href="about.html">Sobre Mi</a>
-        <a href="services.html">Servicios</a>
-        <a href="skills.html" class="active">Habilidades</a>
-        <a href="contact.html">Contacto</a>
-      </nav>
+      <a href="index.html">Inicio</a>
+      <a href="about.html">Sobre Mi</a>
+      <a href="services.html">Servicios</a>
+      <a href="skills.html" class="active">Habilidades</a>
+      <a href="contact.html">Contacto</a>
+    </nav>
   </header>
     <main>
     <section class="container ">
@@ -50,9 +53,14 @@
     </section>
 </main>
 <footer class="footer">
-    <div class="text-container">
-      <p>&copy; 2024 Walter Navarrete. Todos los derechos reservados.</p>
-    </div>
-  </footer>
+  <div class="text-container">
+     <p class="copyright">@ Walter Navarrete / Todos los Derechos Reservados 2024®</p>
+  </div>
+</footer>
+<script>
+  document.getElementById('iconos-menu').addEventListener('click', function() {
+ document.querySelector('.navbar').classList.toggle('active');
+});
+ </script>
 </body>
 </html>

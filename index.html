@@ -5,50 +5,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Walter Navarrete</title>
-  <script defer src="assets/scripts.js"></script>
-  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/general.css">
+  <link rel="stylesheet" href="assets/index.css">
 </head>
 
 <body>
 
   <header class="header">
-    <a href="#Inicio" class="logo">wn</span></a>
-
-    <i class="fa-solid fa-bars" id="iconos-menu"></i>
-
+    <a href="index.html" class="logo">wn</span></a>
+  
+    <div id="iconos-menu" class="hamburger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <nav class="navbar">
       <a href="index.html" class="active">Inicio</a>
-        <a href="about.html">Sobre Mi</a>
-        <a href="services.html">Servicios</a>
-        <a href="skills.html">Habilidades</a>
-        <a href="contact.html">Contacto</a>
+      <a href="about.html">Sobre Mi</a>
+      <a href="services.html">Servicios</a>
+      <a href="skills.html">Habilidades</a>
+      <a href="contact.html">Contacto</a>
     </nav>
   </header>
-
   <main>
     <section class="inicio-container container" id="inicio">
       <div class="contenido-inicio">
         <h2 class="heading index">Hola</h2>
-        <h1>Soy Walter Navarrete</h1>
-        <h2 class="heading">Arquitecto de soluciones /
-          Desarrollador full stack Engineer
-        </h2>
-        <button href="cv/CV.pdf" download="documento.pdf" class="button">Descargar CV</button>
+        <h1 class="title-white-index">Soy Walter Navarrete</h1>
+        <h2 class="heading">Arquitecto de soluciones / Desarrollador full stack Engineer</h2>
+        <a href="assets/CV_Walter_Navarrete.pdf" download="documento.pdf" class="button">Descargar CV</a>
       </div>
-
       <div class="img-inicio">
         <img src="images/foto-perfil.jpeg" alt="foto4x4">
       </div>
-
     </section>
-
-    
   </main>
+
   <footer class="footer">
     <div class="text-container">
-      <p>&copy; 2024 Walter Navarrete. Todos los derechos reservados.</p>
+      <p class="copyright">@ Walter Navarrete / Todos los Derechos Reservados 2024®</p>
     </div>
   </footer>
+
+  <script>
+   document.getElementById('iconos-menu').addEventListener('click', function() {
+  document.querySelector('.navbar').classList.toggle('active');
+});
+  </script>
 
 </body>
 

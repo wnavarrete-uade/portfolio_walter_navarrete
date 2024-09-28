@@ -1,0 +1,43 @@
+
+
+/* SKILLS  */
+
+.skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  flex: 1 1 21%; 
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  height: auto;
+}
+
+.skill img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+  .skill {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill {
+    flex: 1 1 100%;
+  }
+}
+
+/* SKILLS - End */
+
